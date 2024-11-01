@@ -34,3 +34,16 @@ get_mean <- function(data){
 # Performs on data set
 get_mean(mtcars$mpg)
 ```
+
+## Second Function
+```{r}
+
+# Define the second function
+get_max <- function(data_new){
+  result = max(data_new)
+  return(result)
+}
+
+# Performs on data set
+get_max(mtcars$mpg)
+```
