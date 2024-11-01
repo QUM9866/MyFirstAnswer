@@ -1,0 +1,36 @@
+---
+title: "First-Exercise"
+author: "43045"
+date: "2024-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+```{r}
+
+# Clear workspace
+rm(list = ls()) 
+
+# Load Data
+data("mtcars")
+```
+
+
+## First Function
+
+```{r}
+
+# Define the first function
+get_mean <- function(data){
+  result = mean(data)
+  return(result)
+}
+
+# Performs on data set
+get_mean(mtcars$mpg)
+```
